@@ -399,9 +399,15 @@ footer a {
 
 .buttons #youtube {
   background-color: #ff0000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.buttons a {
+.buttons #youtube:hover {
+  background-color: #ff5c5c;
+}
+
+a {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,7 +421,7 @@ footer a {
           align-items: center;
 }
 
-.buttons a i {
+a i {
   margin-right: 3px;
   font-size: 30px;
 }
