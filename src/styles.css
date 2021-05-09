@@ -428,6 +428,8 @@ a {
   margin-left: 10px;
   font-size: 3em;
   font-weight: bolder;
+  -webkit-animation: namespin 20s ease infinite;
+          animation: namespin 20s ease infinite;
 }
 
 .lyrics p {
@@ -523,6 +525,52 @@ main .pointer a h1 {
   .previews-plane {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@-webkit-keyframes namespin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  80% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  85% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  90% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes namespin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  80% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  85% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  90% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
