@@ -1,0 +1,50 @@
+a {
+    background-color: $bg;
+    border: 10px solid $bg;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+    margin: 20px;
+}
+
+.Name {
+    margin-left: 10px;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.lyrics p {
+    margin: 7px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .pointer {
+        background-color: #252525;
+        height: 240px;
+    }
+    .pointer a {
+        background: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .pointer a i {
+        color: #222222;
+        font-size: 200px;
+    }
+    .pointer a h1 {
+        position: relative;
+        top: -120px;
+    }
+}
+
+.fly {
+    box-shadow: 0 0 16px 4px gray;
+}

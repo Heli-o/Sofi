@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sofi</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://api.cajthaml.eu/upload/reset_595b8cd7ad.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="src/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="src/scroll.js"></script>
+</head>
+
+<body>
+    <header id="top" class="wantyougone-header">
+        <h1 class="Name">Want You Gone</h1>
+        <nav>
+            <a href="index.html" class="link">Home</a>
+            <a href="" id="new" class="link">New</a>
+        </nav>
+    </header>
+    <main>
+        <section class="middle">
+            <img src="https://images.genius.com/14688a8bd59c069043fc98baff82ea6f.1000x1000x1.jpg" alt="album cover">
+            <div>
+                <p class="infoName">Want You Gone</p>
+                <p>Author: Aperture Science Psychoacoustic Laboratories</p>
+                <p>Release date: 18. 4. 2011</p>
+                <p>Play Count:</p>
+                <p>- Youtube: 17'606'317</p>
+                <p>- Spotify: 12'131'074</p>
+            </div>
+        </section>
+        <div class="hr"></div>
+        <div class="yt">
+            <iframe src="https://www.youtube.com/embed/dVVZaZ8yO6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="hr"></div>
+        <section class="below-vid">
+            <div class="lyrics" id="wantyougone-lyrics">
+                <h3>Lyrics</h3>
+            </div>
+            <article class="similar">
+                <a href="spazzmaticapolka.html">
+                    <div class="similar-item">
+                        <img src="https://images.genius.com/b703ddea54eb3077f3b08be1f3fd0ac7.999x999x1.jpg" alt="album cover ">
+                        <div>
+                            <p>Spazzmatica Polka</p>
+                            <p>Kevin MacLeod</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="unity.html">
+                    <div class="similar-item">
+                        <img src="https://images.genius.com/22eea4f38ccea4ccbcc339208583f346.499x499x1.jpg " alt="album cover ">
+                        <div>
+                            <p>Unity</p>
+                            <p>TheFatRat</p>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a href="#top">Back to Top</a>
+        </div>
+        <div></div>
+        <div class="extra-info">
+            <h3>Helio &copy 2021</h3>
+            <h3>Work for my class project</h3>
+        </div>
+    </footer>
+    <script>
+        function bypass() {
+            genGoneLyrics();
+        }
+        document.getElementById("wantyougone-lyrics").addEventListener("load", bypass());
+    </script>
+</body>
+
+</html>

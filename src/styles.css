@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+html {
+  /*https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2*/
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  width: 100vw;
+  background-color: #1c1c1c;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+body * {
+  z-index: 1;
+}
+
+main {
+  height: 100%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  padding: 5px;
+  background-color: #ffd000;
+  width: 100vw;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.origin-header {
+  background-color: #ff7b00;
+  color: black;
+}
+
+.unity-header {
+  background-color: #a65391;
+}
+
+.wantyougone-header {
+  background-color: #ec2a23;
+}
+
+.rule-header {
+  background-color: #943298;
+}
+
+.home-header {
+  background-color: #ffd000;
+  color: black;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+div,
+section,
+article {
+  border-radius: 5px;
+}
+
+.yt {
+  /*
+    width: "875";
+    height: "492";*/
+  position: relative;
+  display: block;
+  width: 100%;
+  /* width of iframe wrapper */
+  height: 0;
+  margin: auto;
+  padding: 0% 0% 56.25%;
+  /* 16:9 ratio */
+  overflow: hidden;
+}
+
+.yt iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.below-vid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin: 10px;
+}
+
+.similar {
+  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #3f3f3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.similar-item {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.similar-item img {
+  width: 50%;
+}
+
+.similar-item div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.similar-item div p {
+  color: lightgray;
+  font-size: 0.5em;
+  width: 80%;
+  padding: 5px 0;
+}
+
+.similar-item div :first-child {
+  color: white;
+  font-weight: bold;
+  font-size: 0.6em;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100px;
+  background-color: #3f3f3f;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+footer div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .extra-info * {
+  color: #616161;
+}
+
+footer a {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  -webkit-text-decoration: underline 3px;
+          text-decoration: underline 3px;
+}
+
+.lyrics,
+#filler {
+  width: 60%;
+  margin: 10px;
+}
+
+.lyrics h3,
+#filler h3 {
+  font-size: 2em;
+  margin: 10px 5px;
+  -webkit-text-decoration: underline 5px #3f3f3f;
+          text-decoration: underline 5px #3f3f3f;
+}
+
+.middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 60px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.middle img {
+  width: 256px;
+  height: 256px;
+}
+
+.middle div {
+  margin-left: 50px;
+}
+
+.middle div .infoName {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.middle div p {
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+.middle div .buttons {
+  margin-left: 0px;
+}
+
+.previews-plane {
+  -webkit-box-shadow: 0 0 0 10px #202020;
+          box-shadow: 0 0 0 10px #202020;
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  border-radius: 15px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  background-color: #2b2b2b;
+}
+
+.previews-plane .preview {
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.previews-plane .preview img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin: 5px 10px;
+}
+
+.previews-plane .preview .preview-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.previews-plane .preview .preview-text * {
+  padding: 5px 10px;
+  width: 80%;
+}
+
+.previews-plane .preview .preview-text h3 {
+  font-size: large;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.previews-plane .preview .preview-text h4 {
+  font-size: 15px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.buttons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 0px;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 45%;
+}
+
+.buttons * {
+  background: none;
+  border: none;
+}
+
+.buttons #spotify {
+  background-color: #1ed760;
+}
+
+.buttons #youtube {
+  background-color: #ff0000;
+}
+
+.buttons a {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons a i {
+  margin-right: 3px;
+  font-size: 30px;
+}
+
+a {
+  background-color: #1c1c1c;
+  border: 10px solid #1c1c1c;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 2em;
+  color: #fff;
+  margin: 20px;
+}
+
+.Name {
+  margin-left: 10px;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.lyrics p {
+  margin: 7px 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .pointer {
+  background-color: #252525;
+  height: 240px;
+}
+
+main .pointer a {
+  background: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .pointer a i {
+  color: #222222;
+  font-size: 200px;
+}
+
+main .pointer a h1 {
+  position: relative;
+  top: -120px;
+}
+
+.fly {
+  -webkit-box-shadow: 0 0 16px 4px gray;
+          box-shadow: 0 0 16px 4px gray;
+}
+
+@media only screen and (max-width: 1440px) {
+  main {
+    height: 80%;
+    width: 80%;
+  }
+  .previews-plane {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    height: 80%;
+    width: 90%;
+  }
+  .previews-plane {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .Name {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    width: 400px;
+  }
+  .previews-plane {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.hr {
+  width: 100%;
+  height: 10px;
+  background-color: #3f3f3f;
+  margin: 20px 0;
+}
+/*# sourceMappingURL=styles.css.map */
