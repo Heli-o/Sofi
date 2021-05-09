@@ -259,18 +259,30 @@ footer {
     }
     #spotify {
         background-color: #1ed760;
+        transition: all 0.5s ease;
+    }
+    #spotify:hover {
+        background-color: #5bfb93;
     }
     #youtube {
         background-color: #ff0000;
+        transition: all 0.5s ease;
     }
-    a {
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        i {
-            margin-right: 3px;
-            font-size: 30px;
-        }
+    #youtube:hover {
+        background-color: #ff5c5c;
     }
+}
+
+a {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    i {
+        margin-right: 3px;
+        font-size: 30px;
+    }
+}
+
+
 }

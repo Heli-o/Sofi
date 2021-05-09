@@ -389,6 +389,12 @@ footer a {
 
 .buttons #spotify {
   background-color: #1ed760;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.buttons #spotify:hover {
+  background-color: #5bfb93;
 }
 
 .buttons #youtube {
