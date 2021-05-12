@@ -75,6 +75,8 @@ header {
 }
 
 nav {
+  margin-left: auto;
+  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,6 +84,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  justify-self: flex-end;
 }
 
 div,
@@ -132,7 +135,6 @@ article {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #3f3f3f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,12 +144,28 @@ article {
           flex-direction: column;
 }
 
+.similar a {
+  border: none;
+}
+
+.similar h2 {
+  margin: 10px 0 0;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.indextable {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
 .similar-item {
   width: 100%;
+  margin: 10px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,10 +173,13 @@ article {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #252525;
+  border-radius: 15px;
 }
 
 .similar-item img {
   width: 50%;
+  border-radius: 5px;
 }
 
 .similar-item div {
@@ -295,7 +316,11 @@ footer a {
   border-radius: 15px;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  background-color: #2b2b2b;
+  background-color: #202020;
+}
+
+.previews-plane a {
+  border-radius: 20px;
 }
 
 .previews-plane .preview {
@@ -385,6 +410,7 @@ footer a {
 .buttons * {
   background: none;
   border: none;
+  color: #fff;
 }
 
 .buttons #spotify {
@@ -427,21 +453,34 @@ a i {
 }
 
 a {
-  background-color: #1c1c1c;
-  border: 10px solid #1c1c1c;
   border-radius: 10px;
   text-decoration: none;
   font-size: 2em;
-  color: #fff;
   margin: 20px;
+}
+
+a:visited {
+  color: unset;
+}
+
+.link {
+  /*
+    background-color: $bg;
+    border: 10px solid $bg; */
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-backdrop-filter: brightness(1.1);
+          backdrop-filter: brightness(1.1);
 }
 
 .Name {
   margin-left: 10px;
   font-size: 3em;
   font-weight: bolder;
-  -webkit-animation: namespin 20s ease infinite;
-          animation: namespin 20s ease infinite;
+  -webkit-animation: namespin 60s ease infinite;
+          animation: namespin 60s ease infinite;
 }
 
 .lyrics p {
@@ -522,11 +561,23 @@ main .pointer a h1 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .similar {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 750px) {
   .Name {
     font-size: 1.5em;
+  }
+  .below-vid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .similar {
+    width: 70%;
   }
 }
 
@@ -538,6 +589,9 @@ main .pointer a h1 {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+  .similar {
+    width: 100%;
+  }
 }
 
 @-webkit-keyframes namespin {
@@ -545,21 +599,25 @@ main .pointer a h1 {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  80% {
+  75% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  85% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+  80% {
+    -webkit-transform: rotateY(180deg) rotateX(0deg);
+            transform: rotateY(180deg) rotateX(0deg);
   }
-  90% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+  82% {
+    -webkit-transform: rotateY(180deg) rotateX(180deg);
+            transform: rotateY(180deg) rotateX(180deg);
+  }
+  87% {
+    -webkit-transform: rotateY(360deg) rotateX(360deg);
+            transform: rotateY(360deg) rotateX(360deg);
   }
   100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg) rotateX(360deg);
+            transform: rotateY(360deg) rotateX(360deg);
   }
 }
 
@@ -568,21 +626,25 @@ main .pointer a h1 {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  80% {
+  75% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  85% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+  80% {
+    -webkit-transform: rotateY(180deg) rotateX(0deg);
+            transform: rotateY(180deg) rotateX(0deg);
   }
-  90% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+  82% {
+    -webkit-transform: rotateY(180deg) rotateX(180deg);
+            transform: rotateY(180deg) rotateX(180deg);
+  }
+  87% {
+    -webkit-transform: rotateY(360deg) rotateX(360deg);
+            transform: rotateY(360deg) rotateX(360deg);
   }
   100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg) rotateX(360deg);
+            transform: rotateY(360deg) rotateX(360deg);
   }
 }
 

@@ -1,18 +1,30 @@
 a {
-    background-color: $bg;
-    border: 10px solid $bg;
     border-radius: 10px;
     text-decoration: none;
     font-size: 2em;
-    color: #fff;
     margin: 20px;
+}
+
+a:visited {
+    color: unset;
+}
+
+.link {
+    /*
+    background-color: $bg;
+    border: 10px solid $bg; */
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    backdrop-filter: brightness(1.1);
 }
 
 .Name {
     margin-left: 10px;
     font-size: 3em;
     font-weight: bolder;
-    animation: namespin 20s ease infinite;
+    animation: namespin 60s ease infinite;
 }
 
 .lyrics p {
