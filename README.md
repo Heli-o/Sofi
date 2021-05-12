@@ -3,6 +3,4 @@
  
  TO-DO
  * Fix querries of .Name class
- * Add button links for each song (YT + Spotify)
- * Make some simple JS animations
- * Make a golang code for dynamic updates (will be done as a last step)
+ * Make some simple JS animations (no need, used CSS animations and hover)
