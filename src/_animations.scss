@@ -8,13 +8,13 @@
     80% {
         transform: rotateY(180deg) rotateX(0deg);
     }
-    82% {
+    85% {
         transform: rotateY(180deg) rotateX(180deg);
     }
-    87% {
-        transform: rotateY(360deg) rotateX(360deg);
+    90% {
+        transform: rotateY(0deg) rotateX(180deg);
     }
     100% {
-        transform: rotateY(360deg) rotateX(360deg);
+        transform: rotateY(0deg) rotateX(0deg);
     }
 }

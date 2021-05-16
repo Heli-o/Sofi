@@ -18,6 +18,13 @@ a:visited {
     padding: 10px;
     border-radius: 20px;
     backdrop-filter: brightness(1.1);
+    box-shadow: none;
+    transition: all 1s ease;
+}
+
+.link:hover {
+    backdrop-filter: brightness(0.9);
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 .Name {
