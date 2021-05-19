@@ -289,17 +289,21 @@ footer {
     }
     #spotify {
         background-color: #1ed760;
+        box-shadow: none;
         transition: all 0.5s ease;
     }
     #spotify:hover {
         background-color: #5bfb93;
+        box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.2);
     }
     #youtube {
         background-color: #ff0000;
+        box-shadow: none;
         transition: all 0.5s ease;
     }
     #youtube:hover {
         background-color: #ff6c6c;
+        box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.2);
     }
 }
 
