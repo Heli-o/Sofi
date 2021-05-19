@@ -226,12 +226,16 @@ footer {
     background-color: $shadow;
     a {
         border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .preview {
         border-radius: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: all 0.5s ease-in-out;
         img {
             width: 90%;
             object-fit: cover;
@@ -255,6 +259,9 @@ footer {
                 font-size: 15px;
             }
         }
+    }
+    .preview:hover {
+        background-color: rgba(66, 66, 66, 0.6);
     }
 }
 
