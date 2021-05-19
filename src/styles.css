@@ -321,6 +321,16 @@ footer a {
 
 .previews-plane a {
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .previews-plane .preview {
@@ -335,6 +345,8 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .previews-plane .preview img {
@@ -369,6 +381,10 @@ footer a {
 
 .previews-plane .preview .preview-text h4 {
   font-size: 15px;
+}
+
+.previews-plane .preview:hover {
+  background-color: rgba(66, 66, 66, 0.6);
 }
 
 .buttons {
@@ -618,7 +634,7 @@ main .pointer a h1 {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  75% {
+  78% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
@@ -630,9 +646,13 @@ main .pointer a h1 {
     -webkit-transform: rotateY(180deg) rotateX(180deg);
             transform: rotateY(180deg) rotateX(180deg);
   }
-  90% {
+  84% {
     -webkit-transform: rotateY(0deg) rotateX(180deg);
             transform: rotateY(0deg) rotateX(180deg);
+  }
+  86% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+            transform: rotateY(0deg) rotateX(0deg);
   }
   100% {
     -webkit-transform: rotateY(0deg) rotateX(0deg);
@@ -645,7 +665,7 @@ main .pointer a h1 {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
-  75% {
+  78% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
@@ -657,9 +677,13 @@ main .pointer a h1 {
     -webkit-transform: rotateY(180deg) rotateX(180deg);
             transform: rotateY(180deg) rotateX(180deg);
   }
-  90% {
+  84% {
     -webkit-transform: rotateY(0deg) rotateX(180deg);
             transform: rotateY(0deg) rotateX(180deg);
+  }
+  86% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+            transform: rotateY(0deg) rotateX(0deg);
   }
   100% {
     -webkit-transform: rotateY(0deg) rotateX(0deg);
