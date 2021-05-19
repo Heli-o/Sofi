@@ -647,7 +647,7 @@ main .pointer a h1 {
     -webkit-transform: rotateY(180deg) rotateX(0deg);
             transform: rotateY(180deg) rotateX(0deg);
   }
-  85% {
+  82% {
     -webkit-transform: rotateY(180deg) rotateX(180deg);
             transform: rotateY(180deg) rotateX(180deg);
   }
@@ -678,7 +678,7 @@ main .pointer a h1 {
     -webkit-transform: rotateY(180deg) rotateX(0deg);
             transform: rotateY(180deg) rotateX(0deg);
   }
-  85% {
+  82% {
     -webkit-transform: rotateY(180deg) rotateX(180deg);
             transform: rotateY(180deg) rotateX(180deg);
   }
