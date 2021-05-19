@@ -436,22 +436,30 @@ footer a {
 
 .buttons #spotify {
   background-color: #1ed760;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .buttons #spotify:hover {
   background-color: #5bfb93;
+  -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.2);
 }
 
 .buttons #youtube {
   background-color: #ff0000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .buttons #youtube:hover {
   background-color: #ff6c6c;
+  -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.2);
 }
 
 a {
@@ -494,6 +502,17 @@ a:visited {
   border-radius: 20px;
   -webkit-backdrop-filter: brightness(1.1);
           backdrop-filter: brightness(1.1);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.link:hover {
+  -webkit-backdrop-filter: brightness(0.9);
+          backdrop-filter: brightness(0.9);
+  -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 .Name {
@@ -628,7 +647,7 @@ main .pointer a h1 {
     -webkit-transform: rotateY(180deg) rotateX(0deg);
             transform: rotateY(180deg) rotateX(0deg);
   }
-  82% {
+  85% {
     -webkit-transform: rotateY(180deg) rotateX(180deg);
             transform: rotateY(180deg) rotateX(180deg);
   }
@@ -659,7 +678,7 @@ main .pointer a h1 {
     -webkit-transform: rotateY(180deg) rotateX(0deg);
             transform: rotateY(180deg) rotateX(0deg);
   }
-  82% {
+  85% {
     -webkit-transform: rotateY(180deg) rotateX(180deg);
             transform: rotateY(180deg) rotateX(180deg);
   }
